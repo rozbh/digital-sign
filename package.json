@@ -2,6 +2,15 @@
   "dependencies": {
     "@types/node": "^20.14.10"
   },
+  "bin": "dist/index.js",
+  "pkg": {
+    "targets": [
+      "node18-win-x64",
+      "node18-linux-x64"
+    ],
+    "outputPath": "build"
+  },
+  
   "name": "asymmetric-encryption",
   "version": "1.0.0",
   "main": "src/index.ts",
