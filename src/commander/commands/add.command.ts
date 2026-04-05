@@ -7,7 +7,7 @@ export const addBuddy = new Command("buddy")
     .description("Add a buddy public key")
     .option("--public-key-file <path>", "Path of public key file")
     .option("--public-key <string>", "Content of public key")
-    .option("--name <filename>", "Name for the buddy key file") // new option
+    .option("--name <string>", "Name for the buddy key file") // new option
     .action(async (options) => {
         const hasFile = !!options.publicKeyFile;
         const hasContent = !!options.publicKey;

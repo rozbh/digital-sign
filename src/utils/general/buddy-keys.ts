@@ -1,9 +1,10 @@
 import path from "path";
 import fs from "fs";
 import os from "os";
+import { getBuddyDir } from "../../getters/getter";
 
 // Central folder for buddy keys
-export const buddyDir = path.join(os.homedir(), ".ases-ruzi", "buddys-keys");
+export const buddyDir = getBuddyDir()
 
 /**
  * Ensure the buddy folder exists

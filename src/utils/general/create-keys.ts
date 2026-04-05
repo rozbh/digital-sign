@@ -1,6 +1,7 @@
 import { writeFile, readFile, stat } from 'fs/promises';
 import path from 'path';
 import os from 'os';
+import { getUserDir } from '../../getters/getter';
 
 async function readIfFile(value: string): Promise<string> {
   try {
@@ -15,7 +16,7 @@ async function readIfFile(value: string): Promise<string> {
 }
 
 export async function saveKeys(options: { privateKey?: string; publicKey?: string }) {
-  const userDir = path.join(os.homedir(), '.ases-ruzi', 'user');
+  const userDir = getUserDir()
 
   if (!options.privateKey && !options.publicKey) return;
 

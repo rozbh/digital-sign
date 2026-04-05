@@ -2,10 +2,11 @@ import { mkdir, writeFile, stat } from "fs/promises";
 import path from "path";
 import os from "os";
 import { generateKeyPairs } from "../key-pairs";
+import { getBaseDir, getUserDir } from "../../getters/getter";
 
 export async function generateAndStoreKeys() {
-    const baseDir = path.join(os.homedir(), ".ases-ruzi");
-    const userDir = path.join(baseDir, "user");
+    const baseDir =getBaseDir()
+    const userDir = getUserDir()
 
     // Ensure folder exists
     await mkdir(userDir, { recursive: true, mode: 0o700 });

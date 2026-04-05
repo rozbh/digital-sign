@@ -1,10 +1,11 @@
 import { stat } from "fs/promises";
 import path from "path";
 import os from "os";
+import { getBuddyDir, getUserDir } from "../../getters/getter";
 
 export async function initializeApp() {
-    const userDir = path.join(os.homedir(), ".ases-ruzi", "user");
-    const buddyDir = path.join(os.homedir(), ".ases-ruzi", "buddys-keys");
+    const userDir = getUserDir()
+    const buddyDir = getBuddyDir()
 
     const privateKeyPath = path.join(userDir, "private.key");
     const publicKeyPath = path.join(userDir, "public.key");
