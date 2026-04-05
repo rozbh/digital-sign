@@ -1,17 +1,22 @@
 import { Command } from "commander";
 import path from "path";
 import fs from "fs";
-import { saveBuddyKey } from "../../utils/general/buddy-keys";
+import { listBuddyKeys, saveBuddyKey } from "../../utils/general/buddy-keys";
 
 export const addBuddy = new Command("buddy")
     .description("Add a buddy public key")
     .option("--public-key-file <path>", "Path of public key file")
     .option("--public-key <string>", "Content of public key")
     .option("--name <string>", "Name for the buddy key file") // new option
+    .option("--list", "list of buddys") // new option
     .action(async (options) => {
         const hasFile = !!options.publicKeyFile;
         const hasContent = !!options.publicKey;
 
+        if (options.list) {
+            return console.log(listBuddyKeys());
+
+        }
         // ❌ Validate mutually exclusive
         if (hasFile === hasContent) {
             console.error(

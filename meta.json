@@ -1,0 +1,675 @@
+{
+  "inputs": {
+    "node_modules/commander/lib/error.js": {
+      "bytes": 1170,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/commander/lib/argument.js": {
+      "bytes": 3208,
+      "imports": [
+        {
+          "path": "node_modules/commander/lib/error.js",
+          "kind": "require-call",
+          "original": "./error.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/commander/lib/help.js": {
+      "bytes": 21130,
+      "imports": [
+        {
+          "path": "node_modules/commander/lib/argument.js",
+          "kind": "require-call",
+          "original": "./argument.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/commander/lib/option.js": {
+      "bytes": 10289,
+      "imports": [
+        {
+          "path": "node_modules/commander/lib/error.js",
+          "kind": "require-call",
+          "original": "./error.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/commander/lib/suggestSimilar.js": {
+      "bytes": 2774,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/commander/lib/command.js": {
+      "bytes": 87209,
+      "imports": [
+        {
+          "path": "node:events",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:child_process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/commander/lib/argument.js",
+          "kind": "require-call",
+          "original": "./argument.js"
+        },
+        {
+          "path": "node_modules/commander/lib/error.js",
+          "kind": "require-call",
+          "original": "./error.js"
+        },
+        {
+          "path": "node_modules/commander/lib/help.js",
+          "kind": "require-call",
+          "original": "./help.js"
+        },
+        {
+          "path": "node_modules/commander/lib/option.js",
+          "kind": "require-call",
+          "original": "./option.js"
+        },
+        {
+          "path": "node_modules/commander/lib/suggestSimilar.js",
+          "kind": "require-call",
+          "original": "./suggestSimilar"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/commander/index.js": {
+      "bytes": 812,
+      "imports": [
+        {
+          "path": "node_modules/commander/lib/argument.js",
+          "kind": "require-call",
+          "original": "./lib/argument.js"
+        },
+        {
+          "path": "node_modules/commander/lib/command.js",
+          "kind": "require-call",
+          "original": "./lib/command.js"
+        },
+        {
+          "path": "node_modules/commander/lib/error.js",
+          "kind": "require-call",
+          "original": "./lib/error.js"
+        },
+        {
+          "path": "node_modules/commander/lib/help.js",
+          "kind": "require-call",
+          "original": "./lib/help.js"
+        },
+        {
+          "path": "node_modules/commander/lib/option.js",
+          "kind": "require-call",
+          "original": "./lib/option.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/commander/esm.mjs": {
+      "bytes": 310,
+      "imports": [
+        {
+          "path": "node_modules/commander/index.js",
+          "kind": "import-statement",
+          "original": "./index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/getters/getter.ts": {
+      "bytes": 563,
+      "imports": [
+        {
+          "path": "path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "os",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/utils/general/create-app-forlder.ts": {
+      "bytes": 542,
+      "imports": [
+        {
+          "path": "fs/promises",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "os",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/getters/getter.ts",
+          "kind": "import-statement",
+          "original": "../../getters/getter"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/utils/general/create-keys.ts": {
+      "bytes": 1095,
+      "imports": [
+        {
+          "path": "fs/promises",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "os",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/getters/getter.ts",
+          "kind": "import-statement",
+          "original": "../../getters/getter"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/utils/key-pairs.ts": {
+      "bytes": 344,
+      "imports": [
+        {
+          "path": "crypto",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/utils/general/generate-user-keys.ts": {
+      "bytes": 1474,
+      "imports": [
+        {
+          "path": "fs/promises",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "os",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/utils/key-pairs.ts",
+          "kind": "import-statement",
+          "original": "../key-pairs"
+        },
+        {
+          "path": "src/getters/getter.ts",
+          "kind": "import-statement",
+          "original": "../../getters/getter"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/commander/commands/init.command.ts": {
+      "bytes": 671,
+      "imports": [
+        {
+          "path": "node_modules/commander/esm.mjs",
+          "kind": "import-statement",
+          "original": "commander"
+        },
+        {
+          "path": "src/utils/general/create-app-forlder.ts",
+          "kind": "import-statement",
+          "original": "../../utils/general/create-app-forlder"
+        },
+        {
+          "path": "src/utils/general/create-keys.ts",
+          "kind": "import-statement",
+          "original": "../../utils/general/create-keys"
+        },
+        {
+          "path": "src/utils/general/generate-user-keys.ts",
+          "kind": "import-statement",
+          "original": "../../utils/general/generate-user-keys"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/utils/general/buddy-keys.ts": {
+      "bytes": 1476,
+      "imports": [
+        {
+          "path": "path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "os",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/getters/getter.ts",
+          "kind": "import-statement",
+          "original": "../../getters/getter"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/commander/commands/add.command.ts": {
+      "bytes": 1734,
+      "imports": [
+        {
+          "path": "node_modules/commander/esm.mjs",
+          "kind": "import-statement",
+          "original": "commander"
+        },
+        {
+          "path": "path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/utils/general/buddy-keys.ts",
+          "kind": "import-statement",
+          "original": "../../utils/general/buddy-keys"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/utils/encrypt.ts": {
+      "bytes": 211,
+      "imports": [
+        {
+          "path": "crypto",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/commander/commands/encrypt.commad.ts": {
+      "bytes": 1390,
+      "imports": [
+        {
+          "path": "node_modules/commander/esm.mjs",
+          "kind": "import-statement",
+          "original": "commander"
+        },
+        {
+          "path": "src/utils/general/buddy-keys.ts",
+          "kind": "import-statement",
+          "original": "../../utils/general/buddy-keys"
+        },
+        {
+          "path": "src/utils/encrypt.ts",
+          "kind": "import-statement",
+          "original": "../../utils/encrypt"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/commander/commands/decrypt.commad.ts": {
+      "bytes": 1470,
+      "imports": [
+        {
+          "path": "node_modules/commander/esm.mjs",
+          "kind": "import-statement",
+          "original": "commander"
+        },
+        {
+          "path": "crypto",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "os",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/getters/getter.ts",
+          "kind": "import-statement",
+          "original": "../../getters/getter"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/commander/commands/index.ts": {
+      "bytes": 165,
+      "imports": [
+        {
+          "path": "src/commander/commands/init.command.ts",
+          "kind": "import-statement",
+          "original": "./init.command"
+        },
+        {
+          "path": "src/commander/commands/add.command.ts",
+          "kind": "import-statement",
+          "original": "./add.command"
+        },
+        {
+          "path": "src/commander/commands/encrypt.commad.ts",
+          "kind": "import-statement",
+          "original": "./encrypt.commad"
+        },
+        {
+          "path": "src/commander/commands/decrypt.commad.ts",
+          "kind": "import-statement",
+          "original": "./decrypt.commad"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/utils/general/app-init-check.ts": {
+      "bytes": 753,
+      "imports": [
+        {
+          "path": "fs/promises",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "os",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/getters/getter.ts",
+          "kind": "import-statement",
+          "original": "../../getters/getter"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/commander/index.ts": {
+      "bytes": 766,
+      "imports": [
+        {
+          "path": "node_modules/commander/esm.mjs",
+          "kind": "import-statement",
+          "original": "commander"
+        },
+        {
+          "path": "src/commander/commands/index.ts",
+          "kind": "import-statement",
+          "original": "./commands/index"
+        },
+        {
+          "path": "src/utils/general/app-init-check.ts",
+          "kind": "import-statement",
+          "original": "../utils/general/app-init-check"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/index.ts": {
+      "bytes": 20,
+      "imports": [
+        {
+          "path": "src/commander/index.ts",
+          "kind": "import-statement",
+          "original": "./commander"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "dist/bundle.js": {
+      "imports": [
+        {
+          "path": "node:events",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:child_process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs/promises",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "os",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs/promises",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs/promises",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "crypto",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "crypto",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "crypto",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs/promises",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "exports": [],
+      "entryPoint": "src/index.ts",
+      "inputs": {
+        "node_modules/commander/lib/error.js": {
+          "bytesInOutput": 1231
+        },
+        "node_modules/commander/lib/argument.js": {
+          "bytesInOutput": 3603
+        },
+        "node_modules/commander/lib/help.js": {
+          "bytesInOutput": 20609
+        },
+        "node_modules/commander/lib/option.js": {
+          "bytesInOutput": 9927
+        },
+        "node_modules/commander/lib/suggestSimilar.js": {
+          "bytesInOutput": 2494
+        },
+        "node_modules/commander/lib/command.js": {
+          "bytesInOutput": 85395
+        },
+        "node_modules/commander/index.js": {
+          "bytesInOutput": 963
+        },
+        "node_modules/commander/esm.mjs": {
+          "bytesInOutput": 283
+        },
+        "src/commander/commands/index.ts": {
+          "bytesInOutput": 159
+        },
+        "src/utils/general/create-app-forlder.ts": {
+          "bytesInOutput": 291
+        },
+        "src/getters/getter.ts": {
+          "bytesInOutput": 659
+        },
+        "src/utils/general/create-keys.ts": {
+          "bytesInOutput": 989
+        },
+        "src/utils/general/generate-user-keys.ts": {
+          "bytesInOutput": 1166
+        },
+        "src/utils/key-pairs.ts": {
+          "bytesInOutput": 338
+        },
+        "src/commander/commands/init.command.ts": {
+          "bytesInOutput": 355
+        },
+        "src/commander/commands/add.command.ts": {
+          "bytesInOutput": 1369
+        },
+        "src/utils/general/buddy-keys.ts": {
+          "bytesInOutput": 983
+        },
+        "src/utils/encrypt.ts": {
+          "bytesInOutput": 133
+        },
+        "src/commander/commands/encrypt.commad.ts": {
+          "bytesInOutput": 900
+        },
+        "src/commander/commands/decrypt.commad.ts": {
+          "bytesInOutput": 1052
+        },
+        "src/utils/general/app-init-check.ts": {
+          "bytesInOutput": 645
+        },
+        "src/commander/index.ts": {
+          "bytesInOutput": 439
+        },
+        "src/index.ts": {
+          "bytesInOutput": 0
+        }
+      },
+      "bytes": 136417
+    }
+  }
+}
