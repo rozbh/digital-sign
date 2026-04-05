@@ -102,6 +102,7 @@
     // "allowUnreachableCode": true,                     /* Disable error reporting for unreachable code. */
     "types": ["node"],
     "lib": ["ES2022"],
+    "rootDir": "./src",
     "outDir": "./dist",
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
