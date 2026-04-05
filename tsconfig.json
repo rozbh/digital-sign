@@ -4,7 +4,9 @@
     "module": "CommonJS",
     "strict": true,
     "esModuleInterop": true,
-    "types": ["node"],          // ensures Node types are used
-    "lib": ["ES2020"]           // use latest ECMAScript lib
+    "types": ["node"], // ensures Node types are used
+    "lib": ["ES2020"], // use latest ECMAScript lib
+    "outDir": "dist",
+    "rootDir": "./src"
   }
 }
