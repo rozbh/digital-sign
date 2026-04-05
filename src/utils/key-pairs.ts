@@ -2,7 +2,7 @@ import * as crypto from "crypto";
 
 export function generateKeyPairs() {
   const rs = crypto.generateKeyPairSync("rsa", {
-    modulusLength: 1024,
+    modulusLength: 4096,        // very strong RSA key
     publicKeyEncoding: {
       type: "spki",
       format: "pem",
@@ -12,5 +12,5 @@ export function generateKeyPairs() {
       format: "pem",
     },
   });
-return rs
+  return rs
 }

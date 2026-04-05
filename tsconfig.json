@@ -2,12 +2,9 @@
   "compilerOptions": {
     "target": "ES2020",
     "module": "CommonJS",
-    "rootDir": "./src",
-    "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
-    "types": ["node"],
-    "lib": ["ES2022"]
-  },
-  "include": ["src"]
+    "types": ["node"],          // ensures Node types are used
+    "lib": ["ES2020"]           // use latest ECMAScript lib
+  }
 }
